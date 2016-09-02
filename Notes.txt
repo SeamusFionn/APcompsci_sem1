@@ -1,0 +1,45 @@
+-use notepad++portable
+-make a text file (.java)
+-when using notepad, public class (same name as file)
+-use brackets to start statement 
+-print statement
+	-System.out.println(“          “)
+-use plugin NPPexec
+-Execute NPPexec
+-Compile program
+
+//save the file
+NPP_SAVE
+
+//change to the current directory
+cd "$(CURRENT_DIRECTORY)"
+
+//tell notepad++ where java is
+C:\Program Files\Java\jdk1.8.0_05\bin\javac $(FILE_NAME)
+
+-Execute program
+
+//save the file
+NPP_SAVE
+
+//change to the current directory
+cd "$(CURRENT_DIRECTORY)"
+
+//tell notepad++ where java is
+C:\Program Files\Java\jdk1.8.0_05\bin\java $(NAME_PART)
+
+-public class firstprog
+{
+	public static void main(String[]args)
+	{
+		System.out.println("Hello World");
+		System.out.println("Hello Again");
+		System.out.println("  \"\"  \"\"  ");
+	}
+}
+
+-to show text on screen
+	-compile the print system then execute with the use of F6
+
+
+
