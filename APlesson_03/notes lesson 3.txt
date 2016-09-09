@@ -1,0 +1,43 @@
+Work n response form the user
+using classes
+response from user with this code
+
+Scanner keyboard = new Scanner(System.in);
+
+import java.util.Scanner; //Import Statement
+
+int w = keyboard.nextInt();
+
+these all can be used in a print staement like so
+
+import java.util.Scanner; //Import Statement
+
+public class calculation
+{
+	public static void main(String[]args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Hi, Im a rectangle Surface area calculator");
+		System.out.println("Can I ask you a few questions?");
+		System.out.println("What is your width?");
+		
+		int w = keyboard.nextInt();
+		
+		System.out.println("Thank you, can I ask for your hieght?");
+		
+		int h = keyboard.nextInt();
+		
+		System.out.println("Thank you, what is the length? ");
+		
+		int l = keyboard.nextInt();
+
+		int Surfacearea = 2*(w*1 + l*1 + h*1);
+		
+		System.out.println("Thank you, your Surface area is " + Surfacearea);
+		
+	}
+}
+
+in this i ask for user feedback to help out with their probelms wiht surface area
+it solves the problem for them and talks to them in the middle.
