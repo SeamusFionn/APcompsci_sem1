@@ -1,9 +1,9 @@
-public class wolf
+public class cow
 {
 	public static void main(String[]args)
 	{
 		System.out.println("             (__)");
-		System.out.println("    ` \------(oo)");
+		System.out.println("    `  ------(oo)");
 		System.out.println("       ||    (__)");
 		System.out.println("       ||w--||     ");
 		//System.out.println("")

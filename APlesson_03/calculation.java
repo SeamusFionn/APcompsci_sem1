@@ -26,3 +26,5 @@ public class calculation
 		
 	}
 }
+
+\\Sorry i did the surface area of a rectangle thx for sying it was ok
