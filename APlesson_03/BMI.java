@@ -20,7 +20,7 @@ public class BMI
 
 		double BMI = 703 * (w/(h * h));
 		
-		System.out.println("Thank you,your BMI is " + BMI);
+		System.out.println("your BMI is " + BMI);
 		
 	}
 }

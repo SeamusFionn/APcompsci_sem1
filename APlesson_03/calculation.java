@@ -12,7 +12,7 @@ public class calculation
 		
 		int w = keyboard.nextInt();
 		
-		System.out.println("Thank you, can I ask for your hieght?");
+		System.out.println("Thank you, can I ask for your height?");
 		
 		int h = keyboard.nextInt();
 		
@@ -27,4 +27,3 @@ public class calculation
 	}
 }
 
-\\Sorry i did the surface area of a rectangle thx for sying it was ok
