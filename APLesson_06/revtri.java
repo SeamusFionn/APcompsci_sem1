@@ -1,16 +1,15 @@
 import java.util.Scanner;
 
-public class boxes 
+public class revtri
 {
-	static String string;
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("please enter word: ");
-		string = kb.next();
-		for(int i = 0; i < string.length(); i++)
+		String word = kb.next();
+		for(int i = word.length(); i >= 0; i--)
 		{
-			System.out.println(string);
+			System.out.println(word.substring(0,i));
 		}
 		
 	}
