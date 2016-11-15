@@ -6,7 +6,7 @@ public class passcode
 	public static void main(String[]args)
 	{
 		System.out.println("What is your username and password?");
-		passCheck();
+		passCheck();\
 		if (username.equalsIgnoreCase("Mclovins") && password.equalsIgnoreCase("LmaoLmao"))
 		{
 		System.out.println("Access granted");

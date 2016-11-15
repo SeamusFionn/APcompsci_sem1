@@ -1,0 +1,33 @@
+The 3 main Elements of a loop:
+Initial value:
+     -The initial value of the iteration variable is set and the code then runs.
+escape conditions:
+     -code continues as long as the escape conditions are true.
+Iterations:
+     -Code iterates up or down until the escape condition returns false.
+
+The 3 main types of loops:
+  -Recursive:
+
+- A while loop that makes sure a certain section of code is repeated
+
+  -While:
+
+- For loops but during a section of codes run time another action occurs
+
+  -For:
+
+- Repeats a section of code a certain amount of times until the escape condition is met.
+
+Boolean algebra, is the coding on the quiz useful in everyday coding?
+     -I believe that some of the answers of the study guide questions were too precise for their own good, example
+     Right: System.out.println("I like Mr.Robinnette ");
+     Wrong: System.out.println("I like mr Robinnette ");
+     -I know this isn't one of the questions but you get the point, in everyday coding you can go back and change your code but in these quizzes if you mess up once your screwed.
+     I believe that Boolean expressions are useful in everyday coding.
+
+Strings:
+     -Strings are their own kind of objects meaning that they have their own methods of use.
+     -String.length(), String.indexOf(), String.substring(), String.charAt().
+Returns:
+     -example with the different types of loops (For, While, Recursive), In all of these loops returns tell the method whether or not to stop by returning a value that is true or false to the escape condition.
