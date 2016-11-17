@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class revnum
+{
+	static int number;
+	static int rev = 0;
+	static int num;
+	public static void main(String[]args)
+	{
+		Scanner kb = new Scanner(System.in);
+		System.out.println("please enter number: ");
+		number = kb.nextInt();
+		getReverse();
+		
+		System.out.println(number + " reversed is " + rev);
+	}
+	public static void getReverse()
+	{
+		num = number;
+		while(num > 0)
+		{
+			rev *= 10;
+			rev += num % 10;
+			num /= 10;
+		}
+	}
+}
+
