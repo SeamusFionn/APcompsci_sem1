@@ -12,13 +12,21 @@ public class Center
 		ww = kb.next();
 		System.out.println("Please enter another word: ");
 		www = kb.next();
+		System.out.println(makeCenter(w));
+		System.out.println(makeCenter(ww));
+		System.out.println(makeCenter(www));
 	}
 	
-	public static String makeCenter(String w, String ww, String www)
+	public static String makeCenter(String word)
 	{
-		if (.length() >= 20)
+		if (word.length() >= 20)
 		{
-			return ;
+			return word;
+		}
+		else
+		{
+			word = " " + word + " ";
+			return makeCenter(word);
 		}
 	}
 }
