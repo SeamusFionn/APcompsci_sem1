@@ -2,20 +2,21 @@ import java.util.Scanner;
 
 public class Findz
 {
-	static String words;
-	static String String[] words = new String[5];
+	static String [] words;
+	
 	public static void main(String[]args)
 	{
+		words = new String[5];
 		fillArray();
 		System.out.println("For the words ");
 		printArray();
-		System.out.println("Only " + hasZs() + "contain the letter z. ");
+		System.out.print("Only " + hasZs() + "contain the letter z. ");
 	}
 	
 	public static void fillArray()
 	{
 		Scanner kb = new Scanner(System.in);
-		System.out.pintln("Enter 5 words");
+		System.out.println("Enter 5 words");
 		
 		for (int i = 0; i < words.length; i++)
 		{
@@ -27,8 +28,9 @@ public class Findz
 	{
 		for (String word : words)
 		{
-			System.out.print(word);
+			System.out.print(word + " ");
 		}
+		System.out.println("");
 	}
 	
 	public static String hasZs()
@@ -36,16 +38,11 @@ public class Findz
 		String zs = "";
 		for (String word : words)
 		{
-			if(word.Indexof("z") < 0)
+			if(word.indexOf("z") >= 0)
 			{
-				return word;
-			}
-			
-			if(word.Indexof("z") > 0)
-			{
-				zs += word;
+				zs += word + " ";
 			}
 		}
-		reutrn zs;
+		return zs;
 	}
 }
