@@ -1,12 +1,12 @@
-public class getodds
+public class Bignumber
 {
 	static int[] numbers = new int[10];
 	public static void main(String[]args)
 	{
-		
 		fillArray();
+		System.out.println("For the following numbers... "); 
 		printArray();
-		getOdds();
+		System.out.print("There biggest number is " + getBiggest());
 	}
 	
 	public static void fillArray()
@@ -15,7 +15,6 @@ public class getodds
 		{
 			numbers[i] = (int)(Math.random()*100)+1;
 		}
-		
 	}
 	
 	public static void printArray()
@@ -24,20 +23,19 @@ public class getodds
 		{
 			System.out.print(num + " ");
 		}
+		System.out.println();
 	}
 	
-	public static void getOdds()
+	public static int getBiggest()
 	{
-		String odds = "";
+		int max = 0;
 		for(int num : numbers)
 		{
-			
-			if (num % 2 == 1)
+			if(num > max)
 			{
-				odds += num + " ";
+				max = num;
 			}
-		}	
-		System.out.println("\n" + odds);
-		
+		}
+		return max;
 	}
 }
