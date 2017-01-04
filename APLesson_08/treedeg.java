@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Treedeg
+public class treedeg
 {
 	public static void main(String[]args)
 	{
