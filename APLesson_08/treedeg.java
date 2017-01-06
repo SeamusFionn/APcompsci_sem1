@@ -9,20 +9,16 @@ public class treedeg
 		String word = kb.next();
 		int stop = word.length();
 		int start = 0;
-		System.out.println(tree(word, stop, start));
+		tree(word, stop, start);
 	}
 	
-	public static String tree(String word, int stop, int start)
+	public static void tree(String word, int stop, int start)
 	{
 		if(start <= stop)
 		{
-			System.out.println(word.substring(0, start));
+			System.out.printf("\n%10s",word.substring(0, start));
 			start += 1;
-			return tree(word, stop, start);
-		}
-		else
-		{
-			return "";
+			tree(word, stop, start);
 		}
 	}
 }
