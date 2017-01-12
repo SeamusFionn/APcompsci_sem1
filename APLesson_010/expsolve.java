@@ -12,7 +12,7 @@ public class expsolve
 		
 		ArrayList<String>equation = new ArrayList<>(Arrays.asList(expression.split(" ")));
 		System.out.println(doEquation(equation));
-	
+		
 	}
 	
 	public static ArrayList<String> doEquation(ArrayList<String> equation)
