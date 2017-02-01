@@ -10,7 +10,7 @@ public class Inv
 	   itmmancufacturer = IM;
 	   itemName = I;
 	   cat = "____";
-	   UPC = (int)(Math.random() * 1000000) + 1;
+	   UPC = (int)(Math.random() * 1000000);
 	   price = 0;
 	}
 	public Inv(String IM, String I, String C, double P)
