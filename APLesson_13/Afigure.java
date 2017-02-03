@@ -1,6 +1,14 @@
 public class Afigure extends Toyinv
 {
-	Toyinv object = new Toyinv();
+	public Afigure()
+	{
+		super();
+	}
+	
+	public Afigure(String name)
+	{
+		super(name);
+	}
 	public String getType() 
 	{
 		return "Action Figure";

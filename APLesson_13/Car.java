@@ -1,6 +1,14 @@
 public class Car extends Toyinv
 {
-	Toyinv object = new Toyinv();
+	public Car()
+	{
+		super();
+	}
+	
+	public Car(String name)
+	{
+		super(name);	
+	}
 	public String getType() 
 	{
 		return "Car";

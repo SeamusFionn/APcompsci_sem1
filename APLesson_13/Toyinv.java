@@ -5,13 +5,13 @@ public abstract class Toyinv
 	
 	public Toyinv()
 	{
-		count = 0;
+		count = 1;
 	}
 	
 	public Toyinv(String name)
 	{
 		this.name = name;
-		count = 0;
+		count = 1;
 	}
 	
 	public void setName(String name)
@@ -19,9 +19,9 @@ public abstract class Toyinv
 		this.name = name;
 	}
 	
-	public void setCount()
+	public void setCount(int num)
 	{
-		count = 0;
+		count = num;
 	}
 	
 	public String getName()
@@ -31,7 +31,7 @@ public abstract class Toyinv
 	
 	public int getCount()
 	{
-		return count
+		return count;
 	}
 	
 	abstract String getType();
@@ -39,5 +39,9 @@ public abstract class Toyinv
 	public String toString()
 	{
 		return name + count;
+	}
+	
+	public void addCount(){
+		count += 1;
 	}
 }
