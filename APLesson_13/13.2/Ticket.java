@@ -1,11 +1,14 @@
 public abstract class Ticket
 {
-	public Ticket(){	
+	private int serialNo;
+	public Ticket()
+	{
+		serialNo = (int)(Math.random() * 7)
 	}
 	
 	public int getSerialNo()
 	{
-		return (int)(Math.random() * 7);
+		return serialNo;
 	}
 	
 	abstract int getPrice();
