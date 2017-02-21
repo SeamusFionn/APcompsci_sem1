@@ -3,7 +3,7 @@ public abstract class Ticket
 	private int serialNo;
 	public Ticket()
 	{
-		serialNo = (int)(Math.random() * 7)
+		serialNo = (int)(Math.random() * 7);
 	}
 	
 	public int getSerialNo()

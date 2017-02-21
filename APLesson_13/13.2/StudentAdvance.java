@@ -1,13 +1,16 @@
 public class StudentAdvance extends Advance
 {
-	StudentAdvance object3 = new StudentAdvance("StudentAdvance");
+	public StudentAdvance(int dl)
+	{
+		super(dl);
+	}
 	public int getPrice()
 	{
-		int price /= 2;
+		return super.getPrice() / 2;
 	}
 	
-	public string toString()
+	public String toString()
 	{
-		System.out.println("Serial#: "+getSerialNo()+"\n price: "+getPrice()+"/n Student ID Required!! ");		
+		return super.toString() +"\n Student ID Required!! ";		
 	}
 }

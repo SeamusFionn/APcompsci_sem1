@@ -1,20 +1,20 @@
 public class Advance extends Ticket
 {
 	private int daysleft;
-	Advance object2 = new Advance("Advance");
-	
-	Scanner kb = new Scanner(System.in);
-	System.out.print("how many days are there left?");
-	daysleft = kb.next();
+	public Advance(int dl)
+	{
+		super();
+		daysleft = dl;
+	}
 	public int getPrice()
 	{
 		if(daysleft > 9)
 		{
-			int price = 30;
+			return 30;
 		}
 		else
 		{
-			int price = 40;
+			return 40;
 		}
 	}
 }

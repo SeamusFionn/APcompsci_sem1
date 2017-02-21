@@ -2,11 +2,12 @@ public class TicketDriver
 {
 	public static void main(String[]args)
 	{
-		Walkup object = new Walkup("Walkup");
+		Walkup fun = new Walkup();
+		Advance yay = new Advance(8);
+		StudentAdvance lol = new StudentAdvance(15);
 		
-		Advance object2 = new Advance("Advance");
-		
-		StudentAdvance object3 = new StudentAdvance("StudentAdvance");
-		System.out.println(object.toString()+"\n"+object2.toString()+"\n"+object.toString());
+		System.out.println("\n" + fun);
+		System.out.println("\n" +yay);
+		System.out.println("\n" +lol);
 	}
 }
