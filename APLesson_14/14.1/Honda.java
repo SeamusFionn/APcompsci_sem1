@@ -30,7 +30,7 @@ public class Honda implements Location
 	}
 	public int getID()
 	{
-		return (int)(Math.random() * 6); 
+		return (int)(Math.random() * 999999); 
 	}
 	public void move(int x1, int y1)
 	{
