@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class GMC implements Location
+public class GMC 
 {
 	private double x,y;
 	private int ID;

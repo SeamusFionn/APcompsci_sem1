@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Toyota implements Location
+public class Toyota 
 {
 	private double x,y;
 	private int ID;

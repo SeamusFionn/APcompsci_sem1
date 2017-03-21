@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Honda implements Location
+public class Honda 
 {
 	private double x,y;
 	private int ID;
