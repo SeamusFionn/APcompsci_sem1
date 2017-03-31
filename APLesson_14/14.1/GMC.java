@@ -1,38 +1,36 @@
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class GMC extends Car
 {
-	private double x,y;
-	private int ID;
-	
+	private double xpo, ypo;	
 	public GMC()
 	{
-		x = 0;
-		y = 0;
-	}
-	
-	public GMC(double x1, double y1)
+		super();
+		xpo = 0;
+		ypo = 0;		
+	}	
+	public GMC(double x, double y)
 	{
-		x = x1;
-		y = y1;
-	}
-	
-	
+		super();
+		xpo = x;
+		ypo = y;
+	}		
 	public int getID()
 	{
-		return (int)(Math.random() * (Math.pow(10, 6) - 1) + 1);
-	}
-	
-	public void move(int x1, int y1)
+		return ID;
+	}	
+	public void move(double x,double y)
 	{
-		x = x1;
-		y = y1;
-	}
-	
+		xpo += x;
+		ypo += y;
+	}	
 	public double[] getLoc()
 	{
-		return (new double[]{x,y});
+		double location[]=new double[2];
+		location[0] = xpo;
+		location[1] = ypo;
+		return location;
 	}
 }

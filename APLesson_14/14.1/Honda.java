@@ -4,47 +4,27 @@ import java.util.Arrays;
 
 public class Honda extends Car
 {
-	private double x,y;
-	private int ID;
-	
-	public Honda()
+	private double xpo,ypo;
+	public Honda(double[] honLoc)
 	{
-		x = 0;
-		y = 0;
-	}
-	
-	public Honda(double x1, double y1)
-	{
-		x = x1;
-		y = y1;
-	}
-	
-	public Honda(String coordinates)
-	{
-		String[] parts = coordinates.split(",");
-		x = Double.parseDouble(parts[0]);
-		y = Double.parseDouble(parts[1]);
-	}
-	
-	public Honda(double[] coordinates)
-	{
-		x = coordinates[0];
-		y = coordinates[1];
-	}
-	
+		super();
+		xpo = honLoc[0];
+		ypo = honLoc[1];
+	}		
 	public int getID()
 	{
-		return (int)(Math.random() * 999999);
-	}
-	
-	public void move(int x1, int y1)
+		return ID;
+	}	
+	public void move(double x,double y)
 	{
-		x = x1;
-		y = y1;
-	}
-	
+		xpo += x;
+		ypo += y;
+	}	
 	public double[] getLoc()
 	{
-		return (new double[]{x,y});
+		double[] location = new double[2];
+		location[0] = xpo;
+		location[1] = ypo;
+		return location;
 	}
 }
