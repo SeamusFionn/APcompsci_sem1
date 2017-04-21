@@ -1,4 +1,3 @@
-import java.util.*;
 public class Satellite
 {
    public static void main(String[]args)
@@ -30,16 +29,16 @@ public class Satellite
 	   {
 		   x = Math.round(((Math.random() * 100) + 1) * 100.0) / 100.0;
 		   y = Math.round(((Math.random() * 100) + 1) * 100.0) / 100.0;
-		   printout += "\nAfter " + l.getID() + " Moved: (" + x + ", " + y+ ")";
+		   printout += "\nAfter " + l.getID() + " Moved: (" + x + ", " + y + ")";
 		   l.move(x,y);
-		   printout += "\nNew Location: (" + getLocation(l.getLoc()) + ")\n\n";
+		   printout += "\nNew Location: (" + getLocation(l.getLoc()) + ")";
 	   } 
 	   printout += "\n\n" + "==========================" +
                    "\nDistance from home...";
         for (Location l : locate)
        {
 		   double z = getDistance(l.getLoc(), home);
-           printout += "\nDistance for " + l.getID() + ": (" + Math.round(z*100.0)/100.0+ ")";
+           printout += "\nDistance for " + l.getID() + ": (" + Math.round(z * 100.0)/100.0+ ")";
        }
         System.out.println(printout);
    }

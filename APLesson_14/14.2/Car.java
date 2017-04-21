@@ -4,7 +4,7 @@ abstract class Car implements Location
 {
    public static void main(String[]args)
    {
-       ArrayList<Location> locate = new ArrayList<>();
+	   ArrayList<Location> locate = new ArrayList<>();
        double[] honLoc = {5, 6};
        locate.add(new Honda(honLoc));
        locate.add(new Toyota("8, 9"));
@@ -20,41 +20,32 @@ abstract class Car implements Location
 	   double[] toyotaLoc = locate.get(1).getLoc();
 	   double[] gmcLoc = locate.get(2).getLoc();
 	   
-	   double[] hondaMove = {(int)(Math.random()*100), (int)(Math.random()*100)};
-	   double[] toyotaMove = {(int)(Math.random()*100), (int)(Math.random()*100)};
-	   double[] gmcMove = {(int)(Math.random()*100), (int)(Math.random()*100)};
+	   double[] hondaMove = {(int)(Math.random()* 100), (int)(Math.random()* 100)};
+	   double[] toyotaMove = {(int)(Math.random()* 100), (int)(Math.random()* 100)};
+	   double[] gmcMove = {(int)(Math.random()* 100), (int)(Math.random()* 100)};
 	   
-       String printout = "==========================" + "\nStarting locations...";
-
+       String printout = "----------------------------" + "\nStarting locations...";
        printout += "\n  Location for " + hondaID + ": (" + getLocation(hondaLoc) + ")";
 	   printout += "\n  Location for " + toyotaID + ": (" + getLocation(toyotaLoc) + ")";
 	   printout += "\n  Location for " + gmcID + ": (" + getLocation(gmcLoc) + ")";
-
-       printout += "\n\n" + "==========================" +
-                   "\nDistance from home";
-					   
+       
+	   printout += "\n\n" + "----------------------------" + "\nDistance from home";					   
        printout += "\n  Distance for " + hondaID + ": (" + getDistance(hondaLoc, home)+ ")";
 	   printout += "\n  Distance for " + toyotaID + ": (" + getDistance(toyotaLoc, home)+ ")";
-	   printout += "\n  Distance for " + gmcID + ": (" + getDistance(gmcLoc, home)+ ")";
+	   printout += "\n  Distance for " + gmcID + ": (" + getDistance(gmcLoc, home)+ ")";	   
 	   
-	   printout += "\n";
-
+	   printout += "\n" + "----------------------------";
        printout += "\n After " + hondaID + " Moved: (" + getLocation(hondaMove) + ")";
-	   printout += "\n New Location: (" + getNewLocation(hondaLoc, hondaMove) + ")";
-	   
+	   printout += "\n New Location: (" + getNewLocation(hondaLoc, hondaMove) + ")";	   
 	   printout += "\n\n After " + toyotaID + " Moved: (" + getLocation(toyotaMove) + ")";
-	   printout += "\n New Location: (" + getNewLocation(toyotaLoc, toyotaMove) + ")";
-	   
+	   printout += "\n New Location: (" + getNewLocation(toyotaLoc, toyotaMove) + ")";   
 	   printout += "\n\n After " + gmcID + " Moved: (" + getLocation(gmcMove) + ")";
-	   printout += "\n New Location: (" + getNewLocation(gmcLoc, gmcMove) + ")";
-	   
-	   printout += "\n" +
-                   "\nNew Distance from home";				   
-				   
+	   printout += "\n New Location: (" + getNewLocation(gmcLoc, gmcMove) + ")";	   
+	  
+   	   printout += "\n" + "----------------------------" + "\nNew Distance from home";				   				   
        printout += "\n  Distance for " + hondaID + ": (" + getNewDistance(hondaLoc, home, hondaMove)+ ")";
 	   printout += "\n  Distance for " + toyotaID + ": (" + getNewDistance(toyotaLoc, home, toyotaMove)+ ")";
 	   printout += "\n  Distance for " + gmcID + ": (" + getNewDistance(gmcLoc, home, gmcMove)+ ")";
-
        System.out.println(printout);
    }
 
