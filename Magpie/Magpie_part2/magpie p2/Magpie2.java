@@ -186,6 +186,8 @@ public class Magpie2
 	   String restOfStatement = statement.substring(psnOfYou + 3, psnOfMe).trim();
 	   return "What makes you think that I " + restOfStatement + " you?";
 	}
+	
+	
 		
 	/** Ex_02: The findKeyword() Method...
 	 * ========================================================= */
