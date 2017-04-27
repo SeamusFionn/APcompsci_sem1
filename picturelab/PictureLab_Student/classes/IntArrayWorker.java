@@ -11,6 +11,51 @@ public class IntArrayWorker
     matrix = theMatrix;
   }
   
+  public int getCount(int num)
+  {
+      int count = 0;
+      for (int[] rowArray : matrix)
+      {
+          for (int i : rowArray)
+          {
+              if (i == num)
+              {
+                  count++;
+              }
+          }
+      }
+      return count;
+  }
+  
+   public int getLargest()
+  {
+      int largest = Integer.MIN_VALUE;
+      for (int[] row : matrix)
+      {
+          for (int i : row)
+          {
+              if (i > largest)
+              {
+                  largest = i;
+              }
+          }
+      }    
+      return largest;
+  }
+  
+  public int getColTotal(int col)
+  {
+      int total = 0;     
+      for (int[] row : matrix)
+      {
+          total += row[col];
+      }
+      
+      return total;
+  }
+ 
+  
+
   /**
    * Method to return the total 
    * @return the total of the values in the array
