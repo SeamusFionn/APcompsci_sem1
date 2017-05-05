@@ -53,8 +53,6 @@ public class IntArrayWorker
       
       return total;
   }
- 
-  
 
   /**
    * Method to return the total 

@@ -217,6 +217,49 @@ public class Picture extends SimplePicture
     }
   }
   
+  public void keepOnlyBlue()
+  {
+    Pixel[][] pixs = this.getPixels2D();
+    for (Pixel[] rowArray : pixs)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setRed(0);
+		pixelObj.setGreen(0);
+      }
+    }
+  }
+  
+   public void negate()
+  {
+    Pixel[][] pixs = this.getPixels2D();
+    for (Pixel[] rowArray : pixs)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        pixelObj.setRed(255 - pixelObj.getRed());
+		pixelObj.setGreen(255 - pixelObj.getGreen());
+		pixelObj.setBlue(255 - pixelObj.getBlue());
+      }
+    }
+  }
+  
+  public void grayscale()
+  {
+    Pixel[][] pixs = this.getPixels2D();
+	//int avg = 0;
+    for (Pixel[] rowArray : pixs)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+		int avg = (pixelObj.getRed() + pixelObj.getBlue() + pixelObj.getGreen())/3;
+        pixelObj.setRed(avg);
+		pixelObj.setGreen(avg);
+		pixelObj.setBlue(avg);
+      }
+    }
+  }
+  
   
   /* Main method for testing - each class in Java can have a main 
    * method 
@@ -227,6 +270,7 @@ public class Picture extends SimplePicture
     beach.explore();
     beach.zeroBlue();
     beach.explore();
+	beach.keepOnlyBlue();
   }
   
 } // this } is the end of class Picture, put all new methods before this
