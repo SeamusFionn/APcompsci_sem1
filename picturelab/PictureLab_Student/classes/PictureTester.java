@@ -41,9 +41,33 @@ public class PictureTester
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
-    Picture caterpillar = new Picture("caterpillar.jpg");
+    Picture caterpillar = new Picture("imgres.jpg");
     caterpillar.explore();
     caterpillar.mirrorVertical();
+    caterpillar.explore();
+  }
+  
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture caterpillar = new Picture("imgres.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+  
+  public static void testMirrorHorizontal()
+  {
+    Picture caterpillar = new Picture("imgres.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontal();
+    caterpillar.explore();
+  }
+  
+  public static void testMirrorHorizontalBottomToTop()
+  {
+    Picture caterpillar = new Picture("imgres.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontalBottomToTop();
     caterpillar.explore();
   }
   
@@ -56,10 +80,26 @@ public class PictureTester
     temple.explore();
   }
   
+  public static void testMirrorArms() 
+  {
+	Picture snowman = new Picture("snowman.jpg");
+	snowman.explore();
+	snowman.mirrorArms();
+	snowman.explore();
+  }
+  
+  public static void testMirrorGull() 
+  {
+	Picture snowman = new Picture("seagull.jpg");
+	snowman.explore();
+	snowman.mirrorGull();
+	snowman.explore();
+  }
+  
   /** Method to test the collage method */
   public static void testCollage()
   {
-    Picture canvas = new Picture("640x480.jpg");
+    Picture canvas = new Picture("beach.jpg");
     canvas.createCollage();
     canvas.explore();
   }
@@ -68,7 +108,14 @@ public class PictureTester
   public static void testEdgeDetection()
   {
     Picture swan = new Picture("swan.jpg");
-    swan.edgeDetection(10);
+    swan.edgeDetection(20);
+    swan.explore();
+  }
+  
+  public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("imgres.jpg");
+    swan.edgeDetection2(5);
     swan.explore();
   }
   
@@ -88,13 +135,16 @@ public class PictureTester
     //testFixUnderwater();
     testMirrorVertical();
     testMirrorTemple();
-    //testMirrorArms();
-    //testMirrorGull();
+	testMirrorVerticalRightToLeft();
+    testMirrorHorizontal();
+    testMirrorHorizontalBottomToTop();
+    testMirrorArms();
+    testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
     //testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
+    testEdgeDetection();
+	testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
