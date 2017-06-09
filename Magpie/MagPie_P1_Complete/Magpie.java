@@ -22,7 +22,7 @@ public class Magpie
 			response = "whats up?";
 		}
 		
-		else if (findKeyword(statement, "no") >= 0)
+		else if (findKeyword(statement, " no") >= 0)
 		{
 			response = "Whats wrong dood?";
 		}
